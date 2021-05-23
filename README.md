@@ -80,6 +80,33 @@ instances, and then to query for events. Doing it this way,
 new events can't appear from nowhere, making the logic more
 concise.
 
+## Messages
+Class `Message<>` works just like class `Signal`,  with the
+addition of some values - body of the message. These values
+are specified in a template parameter pack.
+
+```C++
+#include <Message.hpp>
+IPC::Message<int, char> m;
+
+void signal_writer()
+{
+  m.raise(1, 'a');
+}
+
+void signal_reader()
+{
+  int reti; char retc; // Assigned in query()
+
+  if (m.query(reti, retc))
+    do_one_time_response();
+}
+```
+
+The `UpdatedMessage<>` class offers the same functionality,
+as does the `IPC::UpdatedSignal` have  (with regards to the
+`update()` member).
+
 ## Locks
 Locks are useful to prevent races and to protect resources.
 

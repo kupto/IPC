@@ -8,6 +8,10 @@ HeldSpinLock	KEYWORD1
 Signal	KEYWORD1
 UpdatedSignal	KEYWORD1
 
+## Message.hpp
+Message	KEYWORD1
+UpdatedMessage	KEYWORD1
+
 # Methods and Functions (KEYWORD2)
 ## arch.h
 local_irq_save	KEYWORD2
@@ -23,6 +27,8 @@ raise	KEYWORD2
 query	KEYWORD2
 lock	KEYWORD2
 update	KEYWORD2
+
+## Message.hpp
 
 # Instances (KEYWORD2)
 
