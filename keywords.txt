@@ -1,0 +1,31 @@
+# Datatypes (KEYWORD1)
+## Lock.hpp
+HeldPreemptionLock	KEYWORD1
+SpinLock	KEYWORD1
+HeldSpinLock	KEYWORD1
+
+## Signal.hpp
+Signal	KEYWORD1
+UpdatedSignal	KEYWORD1
+
+# Methods and Functions (KEYWORD2)
+## arch.h
+local_irq_save	KEYWORD2
+local_irq_restore	KEYWORD2
+
+## Lock.hpp
+DEFINE_SPINLOCK	KEYWORD2
+ACQUIRE_SPINLOCK	KEYWORD2
+
+## Signal.hpp
+begin	KEYWORD2
+raise	KEYWORD2
+query	KEYWORD2
+lock	KEYWORD2
+update	KEYWORD2
+
+# Instances (KEYWORD2)
+
+# Constants (LITERAL1)
+## arch.h
+ARCH_UNIPROCESSOR LITERAL1
